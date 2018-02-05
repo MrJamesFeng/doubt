@@ -1,0 +1,14 @@
+<!--pages/moive/startTemplate.wxml-->
+<!-- <text>pages/moive/startTemplate.wxml</text> -->
+<template name='startTemplate'>
+  <view class='startTemplate-container'>
+    <view class='startTemplate-starts'>
+      <image class='startTemplate-starts-image' src=' /images/startSelected.png'></image>
+      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
+      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
+      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
+      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
+    </view>
+    <text class='startTemplate-mark'>98.6</text>
+  </view>
+</template>

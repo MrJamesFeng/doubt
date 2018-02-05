@@ -1,0 +1,18 @@
+/* pages/moive/movieList.wxss */
+@import "moiveListTemplate.wxss";
+
+/* .moiveList-container{
+  display: flex;
+  
+}
+.moiveListItem{
+  flex-direction: column;
+} */
+
+.moiveList-container {
+  width: 100%;
+}
+
+.moiveListItems {
+  width: 100%;
+}

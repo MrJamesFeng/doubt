@@ -1,0 +1,11 @@
+<!--pages/moive/moiveTemplate.wxml-->
+<!-- <text>pages/moive/moiveTemplate.wxml</text> -->
+
+<import src='startTemplate.wxml'/>
+<template name='moiveTemplate'>
+<view class='moiveTemplate-container'>
+  <image class='moiveTemplate-moiveCoverage' src='../../../images/moiveCoverage.jpeg'></image>
+  <text class='moiveTemplate-moiveTitle'>电影名字</text>
+  <template is='startTemplate'/>
+</view>
+</template>

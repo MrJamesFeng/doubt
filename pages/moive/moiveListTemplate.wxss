@@ -1,0 +1,17 @@
+/* pages/moive/moiveListTemplate.wxss */
+@import "moiveTemplate.wxss";
+ /* .moiveListItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.moiveListItems template{
+  width: 30%;
+} */
+.moiveListTemplate-header text{
+  font-size: 14px;
+}
+.moiveList-container{
+  width: 10%;
+  background-color: blue;
+}

@@ -1,0 +1,10 @@
+/* pages/moive/moiveTemplate.wxss */
+@import "startTemplate.wxss";
+.moiveTemplate-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.moiveTemplate-moiveCoverage{
+  width: 100%;
+}
