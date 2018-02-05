@@ -4,7 +4,7 @@
 <import src='startTemplate.wxml'/>
 <template name='moiveTemplate'>
 <view class='moiveTemplate-container'>
-  <image class='moiveTemplate-moiveCoverage' src='../../../images/moiveCoverage.jpeg'></image>
+   <image class='moiveTemplate-moiveCoverage' src='../../../images/moiveCoverage.jpeg'></image> 
   <text class='moiveTemplate-moiveTitle'>电影名字</text>
   <template is='startTemplate'/>
 </view>

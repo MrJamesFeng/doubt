@@ -1,9 +1,15 @@
 <!--pages/moive/movieList.wxml-->
 <!-- <text>pages/moive/movieList.wxml</text> -->
 <import src='moiveListTemplate.wxml' />
+
 <view class='moiveList-container'>
-  <view class='moiveListItems'>
+  <view class='moiveTemplateListItems'>
     <template is='moiveListTemplate' />
+    <template is='moiveListTemplate' />
+    <template is='moiveListTemplate' />
+    <template is='moiveListTemplate' />
+    <template is='moiveListTemplate' />
+       <template is='moiveListTemplate' />
     <template is='moiveListTemplate' />
     <template is='moiveListTemplate' />
     <template is='moiveListTemplate' />

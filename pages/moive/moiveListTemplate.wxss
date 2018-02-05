@@ -1,17 +1,23 @@
 /* pages/moive/moiveListTemplate.wxss */
 @import "moiveTemplate.wxss";
- /* .moiveListItems {
+.moiveListTemplate-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.moiveListTemplate-header{
+  flex-direction: row;
+  width: 100%;
+}
+.moiveListTemplates{
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
-.moiveListItems template{
-  width: 30%;
-} */
+.moiveListTemplates template{
+  width: 33.33%;
+} 
 .moiveListTemplate-header text{
-  font-size: 14px;
-}
-.moiveList-container{
-  width: 10%;
-  background-color: blue;
+  font-size: 12px;
 }

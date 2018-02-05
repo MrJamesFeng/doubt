@@ -3,16 +3,23 @@
 .startTemplate-container {
   display: flex;
   flex-direction: row;
+  width: 90%;
+  vertical-align: middle;
 }
 
 .startTemplate-starts image {
-  width: 22px;
-  height: 22px;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
   flex-direction: row;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 .startTemplate-container text{
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 29px;
+}
+.startTemplate-mark{
+  margin-top: 5px;
 }

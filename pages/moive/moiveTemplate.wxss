@@ -6,5 +6,9 @@
   width: 100%;
 }
 .moiveTemplate-moiveCoverage{
-  width: 100%;
+  width: 90%;
 }
+.moiveTemplate-container text{
+  font-size: 12px;
+}
+
