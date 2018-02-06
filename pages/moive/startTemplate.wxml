@@ -9,6 +9,7 @@
       <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
       <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
     </view>
-    <text class='startTemplate-mark'>98.6</text>
+    <text class='startTemplate-mark'>{{item.rating
+.average}}</text>
   </view>
 </template>

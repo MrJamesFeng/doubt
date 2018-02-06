@@ -4,15 +4,11 @@
 
 <view class='moiveList-container'>
   <view class='moiveTemplateListItems'>
+  <block wx:for="{{top250Datas}}" for-item="moive">
+    <template is='moiveListTemplate' data="{{moive}}"/>
+  </block>
+    <!-- <template is='moiveListTemplate' />
     <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-       <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
-    <template is='moiveListTemplate' />
+    <template is='moiveListTemplate' /> -->
   </view>
 </view>

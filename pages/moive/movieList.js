@@ -17,7 +17,11 @@ Page({
     // var top250Url = "/movie/top250"
     // var top250Param = "start=0&count=3"
     // this.loadDataGET(top250Url, top250Param)
-    console.log(top250Datas.top250Datas);
+    // console.log(top250Datas.top250Datas);
+    this.setData({
+      top250Datas: top250Datas.top250Datas.subjects
+    })
+    console.log(this.data.top250Datas)
   },
   loadDataGET:function(url,params){
     var requestUrl = app.globalData.doubanBaseUrl + url;

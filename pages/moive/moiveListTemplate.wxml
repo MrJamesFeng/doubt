@@ -11,9 +11,10 @@
       </view>
     </view>
     <view class='moiveListTemplates'>
-      <template is='moiveTemplate' />
-      <template is='moiveTemplate' />
-      <template is='moiveTemplate' />
+    <block wx:for="moive.casts" for-item="cast">
+            <template is='moiveTemplate' data="{{...casts}}"/>
+    </block>
+
     </view>
   </view>
 </template>
