@@ -2,16 +2,18 @@
 <!-- <text>pages/moive/moiveListTemplate.wxml</text> -->
 <import src='moiveTemplate.wxml' />
 <template name='moiveListTemplate'>
-<view class='moiveListTemplate-container'>
- <view class='moiveListTemplate-header'>
-    <text class='moiveListTemplate-moiveTitle'>正在上映</text>
-    <text class='moiveListTemplate-moiveTitle'>查看更多</text>
-    <text>>>></text>
+  <view class='moiveListTemplate-container'>
+    <view class='moiveListTemplate-header'>
+      <text class='moiveListTemplate-moiveTitle'>正在上映</text>
+      <view>
+        <text class='moiveListTemplate-moiveTitle'>查看更多</text>
+        <text>>>></text>
+      </view>
+    </view>
+    <view class='moiveListTemplates'>
+      <template is='moiveTemplate' />
+      <template is='moiveTemplate' />
+      <template is='moiveTemplate' />
+    </view>
   </view>
-  <view class='moiveListTemplates'>
-    <template is='moiveTemplate' />
-    <template is='moiveTemplate' />
-    <template is='moiveTemplate' />
-  </view>
-</view>
 </template>

@@ -1,4 +1,6 @@
 // pages/moive/movieList.js
+var top250Datas = require("../../datas/datas.js");
+var app = getApp();
 Page({
 
   /**
@@ -12,7 +14,32 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // var top250Url = "/movie/top250"
+    // var top250Param = "start=0&count=3"
+    // this.loadDataGET(top250Url, top250Param)
+    console.log(top250Datas.top250Datas);
+  },
+  loadDataGET:function(url,params){
+    var requestUrl = app.globalData.doubanBaseUrl + url;
+    console.log(requestUrl)
+    wx.request({
+      url: requestUrl ,
+      header:{
+        'content-type': 'application/json'
+      },
+      method: "GET",
+      data:params,
+      success:function(res){
+        console.log(res)
+      },
+      fail:function(error){
+        console.log(error)
+      },
+      complete:function(){
+
+      }
+    })
+    
   },
 
   /**

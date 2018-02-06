@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.1",
 	"appid": "wxcba81ae983dd0fed",
-	"projectname": "douban",
+	"projectname": "doubanDev",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

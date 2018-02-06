@@ -6,8 +6,11 @@
   flex-direction: column;
 }
 .moiveListTemplate-header{
+  display: flex;
   flex-direction: row;
   width: 100%;
+  justify-content: space-between;
+  /* padding: 30rpx 20rpx 22rpx; */
 }
 .moiveListTemplates{
   display: flex;
