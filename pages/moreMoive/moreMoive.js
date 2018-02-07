@@ -1,4 +1,6 @@
-// pages/moive/moiveTemplate.js
+// pages/moreMoive/moreMoive.js
+var moreMoiveData = require("../../datas/datas.js");
+var util = require("../../utils/util.js");
 Page({
 
   /**
@@ -12,15 +14,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("cccccccccc")
-    console.log(options)
+
+  this.setData({
+    category: options.category
+  })
+
+  // console.log(moreMoiveData.moivesData.moreIn_theaters)
+  moreMoiveData.moivesData.moreIn_theaters.subjects = util.startCaculate(moreMoiveData.moivesData.moreIn_theaters.subjects)
+  //  console.log(moreMoiveData.moivesData.moreIn_theaters)
+  this.setData({
+    moreIn_theaters: moreMoiveData.moivesData.moreIn_theaters
+  })
+   console.log(this.data.moreIn_theaters)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+  wx.setNavigationBarTitle({
+    title: this.data.category
+  })
   },
 
   /**

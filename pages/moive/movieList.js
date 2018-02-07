@@ -1,5 +1,6 @@
 // pages/moive/movieList.js
-var top250Datas = require("../../datas/datas.js");
+var moivesData = require("../../datas/datas.js");
+var startCaculate = require("../../utils/util.js");
 var app = getApp();
 Page({
 
@@ -19,9 +20,21 @@ Page({
     // this.loadDataGET(top250Url, top250Param)
     // console.log(top250Datas.top250Datas);
     this.setData({
-      top250Datas: top250Datas.top250Datas.subjects
+      top250: moivesData.moivesData.top250,
+      in_theaters: moivesData.moivesData.in_theaters,
+      coming_soon: moivesData.moivesData.coming_soon
     })
-    console.log(this.data.top250Datas)
+   
+    this.data.top250.subjects = startCaculate.startCaculate(this.data.top250.subjects)
+    this.data.in_theaters.subjects = startCaculate.startCaculate(this.data.in_theaters.subjects)
+    this.data.coming_soon.subjects = startCaculate.startCaculate(this.data.coming_soon.subjects)
+    this.setData({
+      top250: this.data.top250,
+      in_theaters: this.data.in_theaters,
+      coming_soon: this.data.coming_soon
+    })
+     console.log(this.data)
+
   },
   loadDataGET:function(url,params){
     var requestUrl = app.globalData.doubanBaseUrl + url;
@@ -93,5 +106,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  checkMoreTap:function(event){
+    // console.log(event)
+    wx.navigateTo({
+      url: '../moreMoive/moreMoive?' + "category="+event.currentTarget.dataset.category
+    })
   }
 })

@@ -1,0 +1,6 @@
+<!--pages/moreMoive/moreMoive.wxml-->
+<!-- <text>pages/moreMoive/moreMoive.wxml</text> -->
+<import src="moreMoiveTemplate/moreMoiveTemplate.wxml" />
+<view class='moreMoive-container'>
+  <template is="moreMoiveTemplate" data="{{...moreIn_theaters}}" />
+</view>

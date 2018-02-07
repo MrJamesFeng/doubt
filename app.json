@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/moive/movieList",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/moreMoive/moreMoive"
   ],
   "window": {
     "backgroundTextStyle": "light",

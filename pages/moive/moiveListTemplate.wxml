@@ -4,15 +4,15 @@
 <template name='moiveListTemplate'>
   <view class='moiveListTemplate-container'>
     <view class='moiveListTemplate-header'>
-      <text class='moiveListTemplate-moiveTitle'>正在上映</text>
+      <text class='moiveListTemplate-moiveTitle'>{{title}}</text>
       <view>
-        <text class='moiveListTemplate-moiveTitle'>查看更多</text>
+        <text class='moiveListTemplate-moiveTitle' catchtap='checkMoreTap' data-category='{{title}}'>查看更多</text>
         <text>>>></text>
       </view>
     </view>
     <view class='moiveListTemplates'>
-    <block wx:for="moive.casts" for-item="cast">
-            <template is='moiveTemplate' data="{{...casts}}"/>
+    <block wx:for="{{subjects}}" wx:for-item="moiveItem">
+            <template is='moiveTemplate' data="{{...moiveItem}}"/>
     </block>
 
     </view>

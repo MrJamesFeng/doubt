@@ -1,0 +1,2 @@
+/* pages/moreMoive/moreMoive.wxss */
+@import "../moive/moiveTemplate.wxss"

@@ -14,6 +14,29 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function startCaculate(res){
+  var subjects = res
+  for(var index in subjects){
+    var subject = res[index];
+    var stars = subject.rating.stars
+    var starsNum = parseInt(parseInt(stars) / 10)
+    var starsArr = []
+    for(var i =1;i<6;i++){
+      starsArr[i-1] = i<=starsNum?1:0
+    }
+    
+    subject.rating.stars = starsArr
+    // console.log(subject.rating.stars)
+    subjects[index] = subject;
+  }
+  // console.log(subjects);
+  return subjects
+}
+
 module.exports = {
-  formatTime: formatTime
+    formatTime: formatTime
+}
+
+module.exports = {
+  startCaculate: startCaculate
 }

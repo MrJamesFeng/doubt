@@ -1,0 +1,9 @@
+<import src="../../moive/moiveTemplate.wxml" />
+<template name="moreMoiveTemplate">
+  <view class='moreMoiveTemplate-container'>
+    <template is="moiveTemplate.wxml" />
+    <block wx:for="{{subjects}}" wx:for-item="moiveItem">
+      <template is="moiveTemplate.wxml" data="{{...moiveItem}}" />
+    </block>
+  </view>
+</template>

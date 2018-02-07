@@ -3,13 +3,15 @@
 <template name='startTemplate'>
   <view class='startTemplate-container'>
     <view class='startTemplate-starts'>
-      <image class='startTemplate-starts-image' src=' /images/startSelected.png'></image>
+    <block wx:for="{{stars}}" wx:for-item = "star">
+      <image class='startTemplate-starts-image' src="{{star==1?'/images/startSelected.png':'/images/start.png'}}"></image> 
+    </block>
+      <!-- <image class='startTemplate-starts-image' src=' /images/startSelected.png'></image>
       <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
       <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
       <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
-      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image>
+      <image class='startTemplate-starts-image' src='/images/startSelected.png '></image> -->
     </view>
-    <text class='startTemplate-mark'>{{item.rating
-.average}}</text>
+    <text class='startTemplate-mark'>{{average}}</text>
   </view>
 </template>
