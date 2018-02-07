@@ -1,5 +1,6 @@
 @import "../../moive/moiveTemplate.wxss";
 
 .moreMoiveTemplate-container{
-  width: 100%;
+   width: 33.33%; 
+  float: left;
 }

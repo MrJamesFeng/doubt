@@ -1,2 +1,6 @@
 /* pages/moreMoive/moreMoive.wxss */
-@import "../moive/moiveTemplate.wxss"
+@import "moreMoiveTemplate/moreMoiveTemplate.wxss";
+
+.moreMoive-container template{
+width: 33.33%;
+}

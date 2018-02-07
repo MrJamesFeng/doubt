@@ -33,7 +33,7 @@ Page({
       in_theaters: this.data.in_theaters,
       coming_soon: this.data.coming_soon
     })
-     console.log(this.data)
+    //  console.log(this.data)
 
   },
   loadDataGET:function(url,params){
