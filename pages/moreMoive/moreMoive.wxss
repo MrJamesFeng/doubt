@@ -1,6 +1,25 @@
 /* pages/moreMoive/moreMoive.wxss */
 @import "moreMoiveTemplate/moreMoiveTemplate.wxss";
-
+.moreMoive-container{
+  height: 2870px;
+}
 .moreMoive-container template{
 width: 33.33%;
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  padding: auto 0 auto 20px;
+  height: 40px;
+}
+
+.search icon{
+  margin: auto 10px auto 10px;
+  vertical-align: middle;
+}
+
+.search input{
+  height: 40px;
+  font-size: 12px;
 }

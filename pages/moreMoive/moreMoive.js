@@ -7,7 +7,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    confirmed:false,
+    canceled:false,
+    focused:false
   },
 
   /**
@@ -26,6 +28,8 @@ Page({
     moreIn_theaters: moreMoiveData.moivesData.moreIn_theaters
   })
    console.log(this.data.moreIn_theaters)
+  //  wx.showNavigationBarLoading()
+  //  wx.showNavigationBarLoading(false)
   },
 
   /**
@@ -77,5 +81,37 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  onScrolltoupper:function(event){
+    console.log("onScrolltoupper")
+    console.log(event)
+  },
+  onPullDownRefresh: function (event) {
+    // Do something when pull down.
+    console.log("onPullDownRefresh")
+  },
+  onConfirm:function(event){
+    console.log(event)
+    this.setData({
+      confirmed:true,
+      canceled: false,
+      focused: false
+    })
+  },
+  onCancel:function(event){
+    this.setData({
+      canceled: false,
+      confirmed: true,
+      focused: false
+    })
+  },
+  onFocus:function(event){
+    this.setData({
+      focused: true,
+      canceled: true
+    })
+  },
+  onchange:function(event){
+    console.log(event)
   }
 })

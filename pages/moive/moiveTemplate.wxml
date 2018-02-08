@@ -3,9 +3,9 @@
 
 <import src='startTemplate.wxml'/>
 <template name='moiveTemplate'>
-<view class='moiveTemplate-container'>
+<view class='moiveTemplate-container' catchtap='onMoiveTap'>
     <image class='moiveTemplate-moiveCoverage' src='{{images.medium}}'></image> 
-  <text class='moiveTemplate-moiveTitle'>{{title}}</text> 
+   <text class='moiveTemplate-moiveTitle'>{{title}}</text>  
   <template is='startTemplate' data="{{...rating}}"/>
 </view>
 </template>

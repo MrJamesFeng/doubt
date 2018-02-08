@@ -112,5 +112,16 @@ Page({
     wx.navigateTo({
       url: '../moreMoive/moreMoive?' + "category="+event.currentTarget.dataset.category
     })
+  },
+  
+
+  // 电影详情
+  onMoiveTap:function(event){
+    console.log("onMoiveTap")
+    wx.switchTab({
+      url:"../logs/logs"
+    })
+
   }
+  
 })

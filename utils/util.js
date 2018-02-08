@@ -33,10 +33,8 @@ function startCaculate(res){
   return subjects
 }
 
-module.exports = {
-    formatTime: formatTime
-}
 
 module.exports = {
+  formatTime: formatTime,
   startCaculate: startCaculate
 }

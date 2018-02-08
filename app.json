@@ -2,7 +2,8 @@
   "pages": [
     "pages/moive/movieList",
     "pages/logs/logs",
-    "pages/moreMoive/moreMoive"
+    "pages/moreMoive/moreMoive",
+    "pages/moive/moiveDetail/moiveDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,11 +15,16 @@
     "list": [
       {
         "pagePath": "pages/moive/movieList",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"images/tab/ciwei.png",
+        "selectedIconPath":"images/tab/ciwei_hl.png"
+        
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "日志",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
       }
     ]
   },

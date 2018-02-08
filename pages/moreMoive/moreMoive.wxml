@@ -1,6 +1,16 @@
 <!--pages/moreMoive/moreMoive.wxml-->
 <!-- <text>pages/moreMoive/moreMoive.wxml</text> -->
 <import src="moreMoiveTemplate/moreMoiveTemplate.wxml" />
-<view class='moreMoive-container'>
+<!-- <view class='moreMoive-container'>
   <template is="moreMoiveTemplate" data="{{...moreIn_theaters}}" />
+</view>  -->
+<!-- bindscrolltoupper="onScrolltoupper" -->
+<view class='search'>
+  <icon type='search' size='14'></icon>
+  <input confirm-type='search' bindconfirm='onConfirm' bindfocus='onFocus' placeholder="输入电影名称" value='{{confirmed?null:value}}' bindchange='onchange'></input>
+  <icon wx:if="{{canceled}}" type='cancel' size='14' bindtap='onCancel'></icon>
 </view>
+
+<scroll-view class='moreMoive-container' scroll-x='false' scroll-y='true' upper-threshold='50'>
+  <template is="moreMoiveTemplate" data="{{...moreIn_theaters}}" />
+</scroll-view>
