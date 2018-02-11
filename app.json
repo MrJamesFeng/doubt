@@ -3,7 +3,8 @@
     "pages/moive/movieList",
     "pages/logs/logs",
     "pages/moreMoive/moreMoive",
-    "pages/moive/moiveDetail/moiveDetail"
+    "pages/moive/moiveDetail/moiveDetail",
+    "pages/TestES6/ES6TestVC"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,13 +17,18 @@
       {
         "pagePath": "pages/moive/movieList",
         "text": "首页",
-        "iconPath":"images/tab/ciwei.png",
-        "selectedIconPath":"images/tab/ciwei_hl.png"
-        
+        "iconPath": "images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png"
       },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/TestES6/ES6TestVC",
+        "text": "ES6",
         "iconPath": "images/tab/yuedu.png",
         "selectedIconPath": "images/tab/yuedu_hl.png"
       }
